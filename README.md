@@ -54,3 +54,6 @@ wall2 -> space -> cabinet -> cabinet -> cabinet -> flush -> cabinet
 all you need is attach the motherfuckers with each other! 
 
 of course there will be asserts like overflow warnings, suggestions etc
+
+then later, we gonna make everything a model and integrate gpt5 to it. we gonna instruct it to attach objects, learn our structure and 
+help users to make better kitchens!
