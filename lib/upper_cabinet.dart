@@ -15,6 +15,9 @@ three.Object3D makeUpperCabinet({
   required double height,  // Y
   required double depth,   // Z
 
+  double yaw = 0.0,   // NEW: vertical-axis rotation (radians)
+  double pitch = 0.0,
+
   // --- doors ---
   DoorType doorType = DoorType.double,
   HingeSide singleDoorHinge = HingeSide.right,
@@ -140,6 +143,7 @@ three.Object3D makeUpperCabinet({
   } else {
     _addLeaf(doorW: width, centerX: 0.0, isLeftLeaf: true);
   }
-
+  g.rotation.y = yaw;
+  g.rotation.x = pitch;
   return g;
 }

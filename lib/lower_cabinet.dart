@@ -19,6 +19,7 @@ three.Object3D makeLowerCabinet({
   required double width,   // X
   required double height,  // Y
   required double depth,   // Z
+  double yaw = 0.0,
 
   // --- doors ---
   DoorType doorType = DoorType.double,
@@ -158,6 +159,6 @@ three.Object3D makeLowerCabinet({
   } else {
     _addLeaf(doorW: width, centerX: 0.0, isLeftLeaf: true);
   }
-
+  g.rotation.y = yaw;
   return g;
 }
