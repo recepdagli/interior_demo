@@ -57,3 +57,12 @@ of course there will be asserts like overflow warnings, suggestions etc
 
 then later, we gonna make everything a model and integrate gpt5 to it. we gonna instruct it to attach objects, learn our structure and 
 help users to make better kitchens!
+
+think it like fortnite but for kitchen-furniture design!
+or should I say: cursor for architectures!
+
+ok i realized I don't abstract enough that shit.
+
+ok, let me tell how thing will go and items will go be like by add upon each other (corners, angle, reference start point etc.)
+
+project -> surface -> walls -> cabinets (upper, lower, full body etc.)

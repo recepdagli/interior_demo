@@ -126,8 +126,8 @@ class _BlueCubeWithButtonsState extends State<BlueCubeWithButtons> {
     _cube = three.Mesh(cubeGeo, cubeMat)..position.setValues(0, 1, 0);
     threeJs.scene.add(_cube);
 
-     */
 
+     */
     // simple wall alignment: put the BACK faces on the plane z = wallZ
     const wallZ = 0.0;
     const lowerDepth = 0.6;
@@ -163,12 +163,12 @@ class _BlueCubeWithButtonsState extends State<BlueCubeWithButtons> {
       handleYRef: HandleYRef.top,
       handleRefX: 0.05,
       handleRefY: 0.05,
+      yaw: -90 * math.pi / 180
     );
-// keep x offset, align back to wall
+
     cabB.position.setValues(2.2, 0.0, wallZ + lowerDepth / 2);
     threeJs.scene.add(cabB);
 
-// Upper, double doors, handles at INNER–BOTTOM corners
     final wallCab = makeUpperCabinet(
       width: 1.8, height: 0.8, depth: upperDepth,
       doorType: DoorType.double,
@@ -337,3 +337,4 @@ class _BlueCubeWithButtonsState extends State<BlueCubeWithButtons> {
     );
   }
 }
+
